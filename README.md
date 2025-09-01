@@ -1,6 +1,42 @@
 # Atlas-Chain 责任链框架
 
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/nemoob/atlas-chain?style=flat-square)](https://github.com/nemoob/atlas-chain/releases)
+[![GitHub stars](https://img.shields.io/github/stars/nemoob/atlas-chain?style=flat-square)](https://github.com/nemoob/atlas-chain/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/nemoob/atlas-chain?style=flat-square)](https://github.com/nemoob/atlas-chain/network)
+[![GitHub issues](https://img.shields.io/github/issues/nemoob/atlas-chain?style=flat-square)](https://github.com/nemoob/atlas-chain/issues)
+[![GitHub license](https://img.shields.io/github/license/nemoob/atlas-chain?style=flat-square)](https://github.com/nemoob/atlas-chain/blob/main/LICENSE)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.nemoob/atlas-chain-core?style=flat-square)](https://search.maven.org/artifact/io.github.nemoob/atlas-chain-core)
+[![Java Version](https://img.shields.io/badge/Java-8%2B-brightgreen?style=flat-square)](https://www.oracle.com/java/)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.2%2B-brightgreen?style=flat-square)](https://spring.io/projects/spring-boot)
+
 一个基于Java的责任链框架，支持核心模块独立使用和Spring Boot集成。
+
+## 📊 项目统计
+
+### 基础统计
+![GitHub repo size](https://img.shields.io/github/repo-size/nemoob/atlas-chain?style=flat-square)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/nemoob/atlas-chain?style=flat-square)
+![Lines of code](https://img.shields.io/tokei/lines/github/nemoob/atlas-chain?style=flat-square)
+![GitHub language count](https://img.shields.io/github/languages/count/nemoob/atlas-chain?style=flat-square)
+![GitHub top language](https://img.shields.io/github/languages/top/nemoob/atlas-chain?style=flat-square)
+
+### 活跃度统计
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/nemoob/atlas-chain?style=flat-square)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/nemoob/atlas-chain?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/nemoob/atlas-chain?style=flat-square)
+![GitHub contributors](https://img.shields.io/github/contributors/nemoob/atlas-chain?style=flat-square)
+
+### 下载统计
+![GitHub all releases](https://img.shields.io/github/downloads/nemoob/atlas-chain/total?style=flat-square)
+![GitHub release (latest by date)](https://img.shields.io/github/downloads/nemoob/atlas-chain/latest/total?style=flat-square)
+
+### 历史趋势
+![GitHub Repo stars](https://img.shields.io/github/stars/nemoob/atlas-chain?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/nemoob/atlas-chain?style=social)
+
+**Star History**
+
+[![Star History Chart](https://api.star-history.com/svg?repos=nemoob/atlas-chain&type=Date)](https://star-history.com/#nemoob/atlas-chain&Date)
 
 ## 项目结构
 
