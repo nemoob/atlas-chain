@@ -12,6 +12,8 @@
     </parent>
 
     <artifactId>atlas-chain-spring-boot-starter</artifactId>
+    <name>Atlas Chain Spring Boot Starter</name>
+    <description>Atlas Chain responsibility chain framework Spring Boot integration starter</description>
     <packaging>jar</packaging>
 
     <dependencies>

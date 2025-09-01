@@ -12,6 +12,8 @@
     </parent>
 
     <artifactId>atlas-chain-core</artifactId>
+    <name>Atlas Chain Core</name>
+    <description>Atlas Chain responsibility chain framework core module</description>
     <packaging>jar</packaging>
 
     <dependencies>
