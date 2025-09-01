@@ -8,7 +8,7 @@
     <parent>
         <groupId>io.github.nemoob</groupId>
         <artifactId>atlas-chain</artifactId>
-        <version>0.0.1</version>
+        <version>0.0.2</version>
     </parent>
 
     <artifactId>atlas-spring-example</artifactId>
@@ -17,7 +17,7 @@
         <dependency>
             <groupId>io.github.nemoob</groupId>
             <artifactId>atlas-chain-spring-boot-starter</artifactId>
-            <version>0.0.1</version>
+            <version>0.0.2</version>
         </dependency>
         
         <dependency>
