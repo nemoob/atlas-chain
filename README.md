@@ -148,6 +148,50 @@ chain:
     queue-capacity: 100
 ```
 
+### 自定义线程池
+
+如果需要为不同的责任链配置专用的线程池，可以创建自定义配置：
+
+```java
+@Configuration
+public class CustomChainConfig {
+    
+    @Bean("userChainExecutor")
+    public ChainExecutor<UserRequest, UserResponse> userChainExecutor(
+            ChainRegistry<UserRequest, UserResponse> registry) {
+        // 用户处理链专用线程池
+        ExecutorService userExecutor = Executors.newFixedThreadPool(5);
+        return new ChainExecutor<>(registry, userExecutor);
+    }
+    
+    @Bean("orderChainExecutor")
+    public ChainExecutor<OrderRequest, OrderResponse> orderChainExecutor(
+            ChainRegistry<OrderRequest, OrderResponse> registry) {
+        // 订单处理链专用线程池
+        ExecutorService orderExecutor = Executors.newFixedThreadPool(10);
+        return new ChainExecutor<>(registry, orderExecutor);
+    }
+}
+```
+
+然后在服务中使用@Qualifier注入指定的执行器：
+
+```java
+@Service
+public class UserService {
+    
+    @Autowired
+    @Qualifier("userChainExecutor")
+    private ChainExecutor<UserRequest, UserResponse> userChainExecutor;
+    
+    public UserResponse processUser(UserRequest request) {
+        HandlerContext<UserRequest, UserResponse> context = 
+            new HandlerContext<>(request, null);
+        return userChainExecutor.execute("user-chain", context);
+    }
+}
+```
+
 ## 特性
 
 1. **基于注解的链路注册机制** - 通过@ChainHandler注解和ID执行责任链
