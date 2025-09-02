@@ -57,7 +57,7 @@ Spring Boot集成模块提供了自动配置和注解驱动功能。
 <dependency>
     <groupId>io.github.nemoob</groupId>
     <artifactId>atlas-chain-core</artifactId>
-    <version>0.0.1</version>
+    <version>0.1.0</version>
 </dependency>
 ```
 
@@ -67,7 +67,7 @@ Spring Boot集成模块提供了自动配置和注解驱动功能。
 <dependency>
     <groupId>io.github.nemoob</groupId>
     <artifactId>atlas-chain-spring-boot-starter</artifactId>
-    <version>0.0.1</version>
+    <version>0.1.0</version>
 </dependency>
 ```
 
@@ -104,11 +104,11 @@ executor.shutdown();
 
 ### Spring Boot集成使用示例
 
-1. 在处理者类上添加@ChainHandler注解：
+1. 在处理者类上添加@ChainHandler和@Component注解：
 
 ```java
+@Component  // 必须添加，让Spring管理此Bean
 @ChainHandler(value = "user-process", order = 1)
-@Component
 public class UserValidateHandler extends BaseHandler<UserRequest, UserResponse> {
     @Override
     protected boolean doHandle(HandlerContext<UserRequest, UserResponse> context) {

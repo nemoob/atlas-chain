@@ -1,15 +1,13 @@
 package io.github.nemoob.atlas.chain.spring.annotation;
 
-import org.springframework.stereotype.Component;
-
 import java.lang.annotation.*;
 
 /**
  * 责任链处理者注解，用于标记处理者类
+ * 注意：使用此注解的类还需要添加 @Component 注解才能被Spring管理
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-@Component
 public @interface ChainHandler {
     /**
      * 链的ID
